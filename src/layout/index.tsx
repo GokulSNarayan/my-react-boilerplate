@@ -6,7 +6,7 @@ interface LayoutProps extends React.ComponentPropsWithoutRef<'div'> {
 
 export function Layout(props:LayoutProps){
     return(
-        <div className={`h-screen ${props.theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
+        <div className={`h-screen origin-top-left transition-all ${props.theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
             {props.children}
         </div>
     )
