@@ -9,10 +9,10 @@ export function LandingPage() {
     return (
         <>
             <div className='p-4 m-2 absolute top-[40%] left-[40%] -translate-x-1/2 -translate-y-1/2'>
-                <h1 className='text-5xl'>Welcome!</h1>
-                <p>This is a React(TypeScript) boilerplate which uses Vite, PNPM, Tailwind CSS,
+                <h1 className='text-5xl mb-4'>Welcome!</h1>
+                <p className='mb-4'>This is a React(TypeScript) boilerplate which uses Vite, PNPM, Tailwind CSS,
                     React Testing Library, Mock Service Worker.</p>
-                <div className='flex p-4'>
+                <div className='flex'>
                     <img className='mr-4' src={reactLogo} height={100} width={100} alt="React Logo" />
                     <img className='mr-4' src={viteLogo} height={100} width={100} alt="Vite Logo" />
                     <img className='mr-4' src={pnpmLogo} height={100} width={100} alt="Pnpm Logo" />

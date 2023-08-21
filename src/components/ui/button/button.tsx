@@ -6,9 +6,14 @@ interface ButtonProps extends React.ComponentProps<"button"> {
     variant: ButtonVariants;
 }
 
+/**
+ * Custom button component
+ * @param {string} variant 
+ * primary | secondary | warning | danger | success | info| dark | light
+ */
 export const Button = ({variant,...props}: ButtonProps) => {
     return (
-        <button {...props} className={`p-2 m-2 rounded-sm flex items-center justify-center ${getStyle(variant)}`}>{props.children}</button>
+        <button {...props} className={`p-2 m-2 rounded-sm flex items-center justify-center ${getStyle(variant)} ${props?.className ?? ''}`}>{props.children}</button>
     )
 }
 
